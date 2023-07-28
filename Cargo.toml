@@ -1,0 +1,23 @@
+[package]
+name = "self-signed-native-tls"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hyper = { version = "0.14", features = ["full"] }
+if-addrs = "0.10"
+reqwest = { version = "^0.11", features = ["native-tls", "stream"] }
+ring = "0.16"
+rsa = "0.9"
+schannel = "0.1.22"
+tls-listener = { version = "0.7", features = ["native-tls", "hyper-h1", "rt"]}
+tokio = { version = "1.0", features = ["full"] }
+tokio-native-tls = "0.3"
+futures = "0.3"
+http = "0.2"
+rcgen = "0.11"
+gethostname = "0.4"
+rand = "0.8"
+tokio-util = { version = "0.7", features = ["compat"] }
